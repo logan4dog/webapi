@@ -16,6 +16,8 @@ namespace WebApplicationAPI.Controllers
             new Product {Id = 3, Name = "Hammer", Category = "Hardware", Price = 15.25M}
         };
 
+        // Interface implimentation which supports iteration over collection of 
+        // specified type, i.e. Product
         public IEnumerable<Product> GetAllProducts()
         {
             return products;
